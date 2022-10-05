@@ -39,3 +39,7 @@ class Solution:
         ans = []
         self.assignQueen(board, n, 0, ans)
         return ans
+
+
+n = int(input())
+print(Solution().solveNQueens(n))
