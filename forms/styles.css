@@ -1,0 +1,13 @@
+body {
+    background-image: url("images/bg.png");
+    background-color: #cccccc;
+    padding: 0 0 0 0;
+}
+
+
+#formSec {
+
+    padding: 200px 500px 200px 500px;
+    border: solid;
+    border-width: thick;
+}
