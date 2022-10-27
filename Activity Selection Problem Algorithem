@@ -1,0 +1,28 @@
+def maximize_activities(activities):
+    # sort the activities based on the finishing time
+    activities = sorted(activities, key=lambda x:x[1])
+
+    selected = []
+    # append the first element in the list
+    selected.append(activities[0])
+    
+    # keep track of the curenly executing activity
+    selected_obj_index = 0
+    
+    # compare the start time of the next activity with the finishing 
+    # time of the finish time of the current activity
+    for i in range(1,len(activities)):
+        if activities[selected_obj_index][1] <= activities[i][0]:
+            selected.append(activities[i])
+            selected_obj_index = i
+            
+    return selected
+    
+
+Activity = [[0,6], [1, 2], [3, 4], [5,9],[5, 7], [8, 9]]
+
+selected = maximize_activities(Activity)
+
+print("Following activities are selected :", end=" ")
+
+print(selected)
