@@ -19,10 +19,4 @@ def maximize_activities(activities):
     return selected
     
 
-Activity = [[0,6], [1, 2], [3, 4], [5,9],[5, 7], [8, 9]]
-
-selected = maximize_activities(Activity)
-
-print("Following activities are selected :", end=" ")
-
-print(selected)
+changes added-1
